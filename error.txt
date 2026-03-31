@@ -1,0 +1,99 @@
+    Checking bambangshop v0.1.0 (C:\Users\ZAHRAN\IdeaProjects\bambangshop)
+error[E0255]: the name `Notification` is defined multiple times
+  --> src\model\notification.rs:11:1
+   |
+ 6 | use crate::model::notification::Notification;
+   |     ---------------------------------------- previous import of the type `Notification` here
+...
+11 | pub struct Notification {
+   | ^^^^^^^^^^^^^^^^^^^^^^^ `Notification` redefined here
+   |
+   = note: `Notification` must be defined only once in the type namespace of this module
+help: you can use `as` to change the binding name of the import
+   |
+ 6 | use crate::model::notification::Notification as OtherNotification;
+   |                                              ++++++++++++++++++++
+
+warning: unused import: `std::thread`
+ --> src\service\notification.rs:1:5
+  |
+1 | use std::thread;
+  |     ^^^^^^^^^^^
+  |
+  = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: unused import: `crate::model::notification::Notification`
+ --> src\service\notification.rs:5:5
+  |
+5 | use crate::model::notification::Notification;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::model::product::Product`
+ --> src\service\notification.rs:6:5
+  |
+6 | use crate::model::product::Product;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `rocket::log`
+ --> src\model\subscriber.rs:2:5
+  |
+2 | use rocket::log;
+  |     ^^^^^^^^^^^
+
+warning: unused import: `rocket::serde::json::to_string`
+ --> src\model\subscriber.rs:3:5
+  |
+3 | use rocket::serde::json::to_string;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `rocket::tokio`
+ --> src\model\subscriber.rs:4:5
+  |
+4 | use rocket::tokio;
+  |     ^^^^^^^^^^^^^
+
+warning: unused import: `bambangshop::REQWEST_CLIENT`
+ --> src\model\subscriber.rs:5:5
+  |
+5 | use bambangshop::REQWEST_CLIENT;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::model::notification::Notification`
+ --> src\model\subscriber.rs:6:5
+  |
+6 | use crate::model::notification::Notification;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `rocket::log`
+ --> src\model\notification.rs:2:5
+  |
+2 | use rocket::log;
+  |     ^^^^^^^^^^^
+
+warning: unused import: `rocket::serde::json::to_string`
+ --> src\model\notification.rs:3:5
+  |
+3 | use rocket::serde::json::to_string;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `rocket::tokio`
+ --> src\model\notification.rs:4:5
+  |
+4 | use rocket::tokio;
+  |     ^^^^^^^^^^^^^
+
+warning: unused import: `bambangshop::REQWEST_CLIENT`
+ --> src\model\notification.rs:5:5
+  |
+5 | use bambangshop::REQWEST_CLIENT;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+warning: unused import: `crate::model::notification::Notification`
+ --> src\model\notification.rs:6:5
+  |
+6 | use crate::model::notification::Notification;
+  |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+For more information about this error, try `rustc --explain E0255`.
+warning: `bambangshop` (bin "bambangshop") generated 13 warnings
+error: could not compile `bambangshop` (bin "bambangshop") due to 1 previous error; 13 warnings emitted
